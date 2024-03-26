@@ -1,0 +1,9 @@
+on:
+  schedule:
+    - cron: '2 0 * * *'
+jobs:
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run every two mins
+        run: echo "This step will run every 2 mins"
